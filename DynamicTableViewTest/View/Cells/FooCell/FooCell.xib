@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FooCell" rowHeight="60" id="qaf-5R-RBm" customClass="FooCell" customModule="DynamicTableViewTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qaf-5R-RBm" id="c3U-dh-x2y">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tyrion Lannister" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odD-QS-Bbn">
+                        <rect key="frame" x="16" y="20" width="122.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qq8-85-tZd">
+                        <rect key="frame" x="221.5" y="9" width="49.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-ce-dyJ">
+                        <rect key="frame" x="287" y="12" width="15" height="15"/>
+                        <color key="backgroundColor" red="0.0019341921629999999" green="1" blue="0.11991949859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="c70-Nj-din"/>
+                            <constraint firstAttribute="width" constant="15" id="wYo-Lu-HWh"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allied" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abA-C7-Ra3">
+                        <rect key="frame" x="221.5" y="28.5" width="42.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Danearys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60P-PH-weU">
+                        <rect key="frame" x="287" y="29.5" width="72" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="60P-PH-weU" firstAttribute="leading" secondItem="tvi-ce-dyJ" secondAttribute="leading" id="2Fx-0B-c3h"/>
+                    <constraint firstItem="60P-PH-weU" firstAttribute="centerY" secondItem="abA-C7-Ra3" secondAttribute="centerY" id="2kH-To-M7T"/>
+                    <constraint firstItem="odD-QS-Bbn" firstAttribute="centerY" secondItem="c3U-dh-x2y" secondAttribute="centerY" id="CgW-HJ-mhE"/>
+                    <constraint firstAttribute="bottom" secondItem="qq8-85-tZd" secondAttribute="bottom" constant="29.5" id="GJb-qC-0dk"/>
+                    <constraint firstItem="abA-C7-Ra3" firstAttribute="centerY" secondItem="odD-QS-Bbn" secondAttribute="centerY" multiplier="1.3" id="MGU-MX-yDB"/>
+                    <constraint firstItem="tvi-ce-dyJ" firstAttribute="leading" secondItem="qq8-85-tZd" secondAttribute="trailing" constant="16" id="Q5d-1w-EpA"/>
+                    <constraint firstItem="tvi-ce-dyJ" firstAttribute="centerY" secondItem="qq8-85-tZd" secondAttribute="centerY" id="TVE-1C-GBK"/>
+                    <constraint firstItem="odD-QS-Bbn" firstAttribute="leading" secondItem="c3U-dh-x2y" secondAttribute="leadingMargin" id="TeA-YT-65b"/>
+                    <constraint firstItem="abA-C7-Ra3" firstAttribute="leading" secondItem="qq8-85-tZd" secondAttribute="leading" id="VdU-tt-oji"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="60P-PH-weU" secondAttribute="trailing" id="ld8-25-qDw"/>
+                    <constraint firstItem="qq8-85-tZd" firstAttribute="centerY" secondItem="odD-QS-Bbn" secondAttribute="centerY" multiplier="0.65" id="tM2-yx-dw7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="alliedLabel" destination="60P-PH-weU" id="QfN-RY-LIr"/>
+                <outlet property="nameLabel" destination="odD-QS-Bbn" id="RlF-AS-a7x"/>
+                <outlet property="statusView" destination="tvi-ce-dyJ" id="1l2-hW-njx"/>
+            </connections>
+            <point key="canvasLocation" x="-157" y="-26"/>
+        </tableViewCell>
+    </objects>
+</document>

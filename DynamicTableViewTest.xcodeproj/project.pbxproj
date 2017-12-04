@@ -13,6 +13,14 @@
 		5F75BBDA1FD594DA00E01DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F75BBD91FD594DA00E01DEE /* Assets.xcassets */; };
 		5F75BBDD1FD594DA00E01DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F75BBDB1FD594DA00E01DEE /* LaunchScreen.storyboard */; };
 		5F75BBE81FD594DA00E01DEE /* DynamicTableViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75BBE71FD594DA00E01DEE /* DynamicTableViewTestTests.swift */; };
+		5F75BBF41FD5953500E01DEE /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75BBF31FD5953500E01DEE /* DataSource.swift */; };
+		5F75BBF61FD597A200E01DEE /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75BBF51FD597A200E01DEE /* TableViewDataSource.swift */; };
+		5F75BBFB1FD59BF500E01DEE /* FooTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75BBFA1FD59BF500E01DEE /* FooTableViewDataSource.swift */; };
+		5F75BBFE1FD59D0000E01DEE /* ModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75BBFD1FD59D0000E01DEE /* ModelFactory.swift */; };
+		5F75BC031FD59D5800E01DEE /* FooCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75BC021FD59D5800E01DEE /* FooCell.swift */; };
+		5F75BC051FD59D6000E01DEE /* FooCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F75BC041FD59D6000E01DEE /* FooCell.xib */; };
+		5F75BC091FD5A04400E01DEE /* ForceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F75BC081FD5A04400E01DEE /* ForceCell.xib */; };
+		5F75BC0B1FD5A04E00E01DEE /* ForceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75BC0A1FD5A04E00E01DEE /* ForceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,14 @@
 		5F75BBE31FD594DA00E01DEE /* DynamicTableViewTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicTableViewTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F75BBE71FD594DA00E01DEE /* DynamicTableViewTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableViewTestTests.swift; sourceTree = "<group>"; };
 		5F75BBE91FD594DA00E01DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F75BBF31FD5953500E01DEE /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		5F75BBF51FD597A200E01DEE /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		5F75BBFA1FD59BF500E01DEE /* FooTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooTableViewDataSource.swift; sourceTree = "<group>"; };
+		5F75BBFD1FD59D0000E01DEE /* ModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFactory.swift; sourceTree = "<group>"; };
+		5F75BC021FD59D5800E01DEE /* FooCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooCell.swift; sourceTree = "<group>"; };
+		5F75BC041FD59D6000E01DEE /* FooCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooCell.xib; sourceTree = "<group>"; };
+		5F75BC081FD5A04400E01DEE /* ForceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForceCell.xib; sourceTree = "<group>"; };
+		5F75BC0A1FD5A04E00E01DEE /* ForceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +93,9 @@
 		5F75BBD11FD594DA00E01DEE /* DynamicTableViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				5F75BC001FD59D4200E01DEE /* View */,
+				5F75BBFC1FD59CF600E01DEE /* ModelFactory */,
+				5F75BBF21FD5952600E01DEE /* DataSource */,
 				5F75BBD21FD594DA00E01DEE /* AppDelegate.swift */,
 				5F75BBD41FD594DA00E01DEE /* ViewController.swift */,
 				5F75BBD61FD594DA00E01DEE /* Main.storyboard */,
@@ -94,6 +113,67 @@
 				5F75BBE91FD594DA00E01DEE /* Info.plist */,
 			);
 			path = DynamicTableViewTestTests;
+			sourceTree = "<group>";
+		};
+		5F75BBF21FD5952600E01DEE /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				5F75BBF91FD59BD000E01DEE /* DataSources */,
+				5F75BBF31FD5953500E01DEE /* DataSource.swift */,
+				5F75BBF51FD597A200E01DEE /* TableViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		5F75BBF91FD59BD000E01DEE /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				5F75BBFA1FD59BF500E01DEE /* FooTableViewDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		5F75BBFC1FD59CF600E01DEE /* ModelFactory */ = {
+			isa = PBXGroup;
+			children = (
+				5F75BBFD1FD59D0000E01DEE /* ModelFactory.swift */,
+			);
+			path = ModelFactory;
+			sourceTree = "<group>";
+		};
+		5F75BC001FD59D4200E01DEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5F75BC011FD59D4800E01DEE /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F75BC011FD59D4800E01DEE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5F75BC071FD5A03800E01DEE /* SWCell */,
+				5F75BC061FD5A03200E01DEE /* FooCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5F75BC061FD5A03200E01DEE /* FooCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F75BC021FD59D5800E01DEE /* FooCell.swift */,
+				5F75BC041FD59D6000E01DEE /* FooCell.xib */,
+			);
+			path = FooCell;
+			sourceTree = "<group>";
+		};
+		5F75BC071FD5A03800E01DEE /* SWCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F75BC0A1FD5A04E00E01DEE /* ForceCell.swift */,
+				5F75BC081FD5A04400E01DEE /* ForceCell.xib */,
+			);
+			path = SWCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +259,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F75BC051FD59D6000E01DEE /* FooCell.xib in Resources */,
 				5F75BBDD1FD594DA00E01DEE /* LaunchScreen.storyboard in Resources */,
 				5F75BBDA1FD594DA00E01DEE /* Assets.xcassets in Resources */,
 				5F75BBD81FD594DA00E01DEE /* Main.storyboard in Resources */,
+				5F75BC091FD5A04400E01DEE /* ForceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F75BBF41FD5953500E01DEE /* DataSource.swift in Sources */,
+				5F75BC0B1FD5A04E00E01DEE /* ForceCell.swift in Sources */,
 				5F75BBD51FD594DA00E01DEE /* ViewController.swift in Sources */,
+				5F75BBFE1FD59D0000E01DEE /* ModelFactory.swift in Sources */,
+				5F75BBFB1FD59BF500E01DEE /* FooTableViewDataSource.swift in Sources */,
+				5F75BC031FD59D5800E01DEE /* FooCell.swift in Sources */,
+				5F75BBF61FD597A200E01DEE /* TableViewDataSource.swift in Sources */,
 				5F75BBD31FD594DA00E01DEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

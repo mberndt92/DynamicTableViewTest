@@ -10,16 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    lazy var dataSource = FooTableViewDataSource(delegate: self)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        dataSource.tableView = tableView
+        dataSource.reloadData()
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension ViewController: TableViewDelegate {
+    
+    func tableViewDidSelect(model: RowDataSource) {
+        //Note: This is where something like a switch would be needed to determine the type of the model
+        //Another idea: send different delegates and do the switch inside the FoodTableViewDataSource, as this one actually knows the supported cell/model types as well.
+        print("Selected: \(model)")
     }
-
-
+    
 }
 
